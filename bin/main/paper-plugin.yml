@@ -1,0 +1,5 @@
+name: Cigarette
+version: ${version}
+main: dev.stamchuk.cigarette.Cigarette
+api-version: "1.21"
+author: Stamchuk

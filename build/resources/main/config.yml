@@ -1,0 +1,77 @@
+cigarette:
+  material: PAPER
+  custom-model-data: 1001
+  name: "<gradient:#ff6b6b:#ee5a24>сигарета"
+
+cooldown-seconds: 5
+
+smoking:
+  # Сколько секунд держать ПКМ, чтобы затянуться.
+  duration-seconds: 3.0
+  # Анимация удержания: TOOT_HORN (рука у лица), EAT, DRINK, NONE и др.
+  animation: TOOT_HORN
+  # Прерывать затяжку при смене позиции.
+  interrupt-on-move: true
+  # Полоса прогресса в actionbar во время затяжки.
+  show-progress: true
+
+recipe:
+  enabled: true
+  # Крафт 3x3: два столбца бумаги, средний столбец наполнителя.
+  paper: PAPER
+  filler: GUNPOWDER
+  result-amount: 6
+
+effects:
+  strength:
+    duration: 200
+    amplifier: 0
+  regeneration:
+    duration: 200
+    amplifier: 0
+
+sound:
+  name: "entity.generic.eat"
+  volume: 0.8
+  pitch: 0.7
+
+withdrawal:
+  # Эффекты обновляются каждую секунду с этой длительностью.
+  # Короткое значение = дебаффы спадают сразу, как ломка закончилась.
+  effect-refresh-ticks: 40
+  actionbar-interval-seconds: 4
+
+addiction:
+  # 0 = зависимость не спадает. Иначе: за столько минут без курения
+  # счётчик выкуренного уменьшается на 1.
+  decay-minutes-per-cigarette: 0
+
+  light:
+    min-smoked: 11
+    withdrawal-minutes: 32
+    effects:
+      slowness: 0
+  medium:
+    min-smoked: 31
+    withdrawal-minutes: 27
+    effects:
+      slowness: 1
+      weakness: 0
+  heavy:
+    min-smoked: 61
+    withdrawal-minutes: 22
+    effects:
+      slowness: 1
+      weakness: 1
+      mining_fatigue: 0
+  critical:
+    min-smoked: 101
+    withdrawal-minutes: 18
+    damage-interval-seconds: 37
+    damage-amount: 1.0
+    effects:
+      slowness: 2
+      weakness: 1
+      mining_fatigue: 1
+      nausea: 1
+      hunger: 0

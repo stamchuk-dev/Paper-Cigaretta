@@ -1,0 +1,34 @@
+cigarette:
+  material: PAPER
+  custom-model-data: 1001
+  name: "<gradient:#ff6b6b:#ee5a24>сигарета"
+
+cooldown-seconds: 5
+
+effects:
+  strength:
+    duration: 200
+    amplifier: 0
+  regeneration:
+    duration: 200
+    amplifier: 0
+
+sound:
+  name: "entity.generic.eat"
+  volume: 0.8
+  pitch: 0.7
+
+addiction:
+  light:
+    min-smoked: 11
+    withdrawal-minutes: 32
+  medium:
+    min-smoked: 31
+    withdrawal-minutes: 27
+  heavy:
+    min-smoked: 61
+    withdrawal-minutes: 22
+  critical:
+    min-smoked: 101
+    withdrawal-minutes: 18
+    damage-interval-seconds: 37
