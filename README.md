@@ -48,7 +48,8 @@
 
 Два столбца бумаги, порох по центру — на выходе 6 сигарет.
 
-<img width="292" height="144" alt="craft" src="https://github.com/user-attachments/assets/770b963b-6b5b-4f42-96bb-5123d35c6954" />
+<img width="292" height="144" alt="craft" src="https://github.com/user-attachments/assets/bbe0ef5a-74c3-4d44-aeed-ddffcb814a57" />
+
 
 
 Ингредиенты и выход настраиваются в `config.yml`. Сигареты не подходят под ванильные рецепты бумаги, так что книгу или ракету из них не собрать.
